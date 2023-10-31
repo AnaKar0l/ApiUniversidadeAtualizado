@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\20191034010037\\APIUNIVERSIDADE\\apiUniversidade.csproj": {}
+    "C:\\Users\\20201034010017\\ApiUniversidadeAtualizado\\apiUniversidade.csproj": {}
   },
   "projects": {
-    "C:\\Users\\20191034010037\\APIUNIVERSIDADE\\apiUniversidade.csproj": {
+    "C:\\Users\\20201034010017\\ApiUniversidadeAtualizado\\apiUniversidade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\20191034010037\\APIUNIVERSIDADE\\apiUniversidade.csproj",
+        "projectUniqueName": "C:\\Users\\20201034010017\\ApiUniversidadeAtualizado\\apiUniversidade.csproj",
         "projectName": "apiUniversidade",
-        "projectPath": "C:\\Users\\20191034010037\\APIUNIVERSIDADE\\apiUniversidade.csproj",
-        "packagesPath": "C:\\Users\\20191034010037\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\20191034010037\\APIUNIVERSIDADE\\obj\\",
+        "projectPath": "C:\\Users\\20201034010017\\ApiUniversidadeAtualizado\\apiUniversidade.csproj",
+        "packagesPath": "C:\\Users\\20201034010017\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\20201034010017\\ApiUniversidadeAtualizado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\20191034010037\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\20201034010017\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
