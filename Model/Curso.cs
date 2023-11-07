@@ -9,9 +9,9 @@ namespace apiUniversidade.Model
     {
         public int ID {get; set;}
 
-        public String Nome {get; set;}
+        public String? Nome {get; set;}
 
-        public String Area {get; set;}
+        public String? Area {get; set;}
 
         public int Duracao {get; set;}
 
