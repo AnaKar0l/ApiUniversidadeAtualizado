@@ -12,6 +12,7 @@ using Microsoft.OpenApi.Extensions;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authorization;
 
 namespace apiUniversidade.Controllers
 {
@@ -26,7 +27,7 @@ namespace apiUniversidade.Controllers
 
             //gerar chave através de um algoritmo de chave simétrica
             var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(_configuration["Jwt:key"])
+                Encoding.UTF8.GetBytes(_configuration["Jwt:Key"])
             );
 
             //gerar assinatura digital do token utilizando a chave primaria
@@ -84,7 +85,7 @@ namespace apiUniversidade.Controllers
                 return BadRequest(result.Errors);
 
             await _signInManager.SignInAsync(user, false);
-            return Ok();
+            return Ok(GeraToken(model));
         }
 
         [HttpPost("login")]
@@ -93,7 +94,7 @@ namespace apiUniversidade.Controllers
                 isPersistent: false, lockoutOnFailure: false);
 
             if(result.Succeeded)
-                return Ok();
+                return Ok(GeraToken(userInfo));
             else{
                 ModelState.AddModelError(string.Empty, "Login inválido...");
                 return BadRequest(ModelState);
